@@ -1,7 +1,7 @@
 //
 // Created by Yaroslav! on 18/07/2024.
 //
-
+#pragma once
 #include "iostream"
 #include "string"
 using namespace std;

@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 23)
 
 add_executable(mobile_carrier main.cpp
         SubscriberFee.cpp
-        SubscriberFee.h)
+        SubscriberFee.h
+        InternationalCalls.cpp
+        InternationalCalls.h)
