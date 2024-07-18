@@ -7,4 +7,6 @@ add_executable(mobile_carrier main.cpp
         SubscriberFee.cpp
         SubscriberFee.h
         InternationalCalls.cpp
-        InternationalCalls.h)
+        InternationalCalls.h
+        LocalCalls.cpp
+        LocalCalls.h)
