@@ -1,6 +1,7 @@
 //
 // Created by Yaroslav! on 18/07/2024.
 //
+
 #pragma once
 #include "iostream"
 #include "string"
@@ -18,8 +19,7 @@ private:
     int year;
 public:
     InternationalCalls(string lastName, string firstName, string middleName, string address, string city, string passportData,
-                       string country, string callCity, int durationInMinutes, double price, double totalPayment,
-                       string month, int year);
+                       string country, string callCity, int durationInMinutes, double price, double totalPayment, string month, int year);
 
     void setCountry(string country);
     void setCallCity(string callCity);
@@ -38,5 +38,6 @@ public:
     int getYear() const;
 
     void displayInfo() const override;
+
 
 };

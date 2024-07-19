@@ -4,11 +4,11 @@
 
 #include "InternationalCalls.h"
 
-
-InternationalCalls::InternationalCalls(string lastName, string firstName, string middleName, string address, string city,
-    string passportData, string country, string callCity, int durationInMinutes, double price, double totalPayment, string month, int year)
-: SubscriberFee(lastName, firstName, middleName, address, city, passportData)
-{
+InternationalCalls::InternationalCalls(string lastName, string firstName, string middleName, string address,
+                                       string city, string passportData, string country, string callCity,
+                                       int durationInMinutes, double price, double totalPayment, string month,
+                                       int year)
+                                       : SubscriberFee(lastName, firstName, middleName, address, city, passportData) {
     this->country = country;
     this->callCity = callCity;
     this->durationInMinutes = durationInMinutes;
@@ -16,95 +16,72 @@ InternationalCalls::InternationalCalls(string lastName, string firstName, string
     this->totalPayment = totalPayment;
     this->month = month;
     this->year = year;
-
 }
 
-void InternationalCalls::setCountry(string country)
-{
+void InternationalCalls::setCountry(string country) {
     this->country = country;
 }
 
-void InternationalCalls::setCallCity(string callCity)
-{
+void InternationalCalls::setCallCity(string callCity) {
     this->callCity = callCity;
 }
 
-void InternationalCalls::setDurationInMinutes(int durationInMinutes)
-{
+void InternationalCalls::setDurationInMinutes(int durationInMinutes) {
     this->durationInMinutes = durationInMinutes;
 }
 
-void InternationalCalls::setPrice(double price)
-{
+void InternationalCalls::setPrice(double price) {
     this->price = price;
 }
 
-void InternationalCalls::setTotalPayment(double totalPayment)
-{
+void InternationalCalls::setTotalPayment(double totalPayment) {
     this->totalPayment = totalPayment;
 }
 
-void InternationalCalls::setMonth(string month)
-{
+void InternationalCalls::setMonth(string month) {
     this->month = month;
 }
 
-void InternationalCalls::setYear(int year)
-{
+void InternationalCalls::setYear(int year) {
     this->year = year;
 }
 
-string InternationalCalls::getCountry() const
-{
+string InternationalCalls::getCountry() const {
     return country;
 }
 
-string InternationalCalls::getCallCity() const
-{
+string InternationalCalls::getCallCity() const {
     return callCity;
 }
 
-int InternationalCalls::getDurationInMinutes() const
-{
+int InternationalCalls::getDurationInMinutes() const {
     return durationInMinutes;
 }
 
-double InternationalCalls::getPrice() const
-{
+double InternationalCalls::getPrice() const {
     return price;
 }
 
-double InternationalCalls::getTotalPayment() const
-{
-    return totalPayment;
+double InternationalCalls::getTotalPayment() const {
+    return  totalPayment;
 }
 
-string InternationalCalls::getMonth() const
-{
+string InternationalCalls::getMonth() const {
     return month;
 }
 
-int InternationalCalls::getYear() const
-{
+int InternationalCalls::getYear() const {
     return year;
 }
 
-void InternationalCalls::displayInfo() const
-{
+void InternationalCalls::displayInfo() const {
     SubscriberFee::displayInfo();
-    cout << "International Call to " << country << ", " << callCity << endl;
-    cout << "Duration: " << durationInMinutes << " minutes" << endl;
+    cout << "International call to: " << country << ", " << callCity << endl;
+    cout << "Duration in minutes: " << durationInMinutes << endl;
     cout << "Price per minute: " << price << endl;
-    cout << "Total Payment: " << totalPayment << endl;
-    cout << "Date: " << month << " " << year << endl;
+    cout << "Total payment: " << totalPayment << endl;
+    cout << "Date: " << month << "." << year << endl;
 }
-
-
-
-
-
-
-
 
 
 
