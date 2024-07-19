@@ -9,4 +9,6 @@ add_executable(mobile_carrier main.cpp
         InternationalCalls.cpp
         InternationalCalls.h
         LocalCalls.cpp
-        LocalCalls.h)
+        LocalCalls.h
+        InternetConnection.cpp
+        InternetConnection.h)
