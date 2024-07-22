@@ -36,5 +36,5 @@ public:
     virtual void displayInfo() const;
     static int getCount();
 
-    ostream& operator<<(ostream& os, const SubscriberFee& fee);
+    friend ostream& operator<<(ostream& os, const SubscriberFee& fee);
 };

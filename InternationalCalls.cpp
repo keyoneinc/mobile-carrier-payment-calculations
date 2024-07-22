@@ -83,11 +83,8 @@ void InternationalCalls::displayInfo() const {
     cout << "Date: " << month << "." << year << endl;
 }
 
-ostream& InternationalCalls::operator<<(ostream& os, const InternationalCalls& call)
+ostream& operator<<(ostream& os, const InternationalCalls& call)
 {
     call.displayInfo();
     return os;
 }
-
-
-

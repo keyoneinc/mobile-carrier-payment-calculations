@@ -80,12 +80,8 @@ int SubscriberFee::getCount()
     return count;
 }
 
-ostream& SubscriberFee::operator<<(ostream& os, const SubscriberFee& fee)
+ostream& operator<<(ostream& os, const SubscriberFee& fee)
 {
     fee.displayInfo();
     return os;
 }
-
-
-
-

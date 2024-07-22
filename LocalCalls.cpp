@@ -75,11 +75,8 @@ void LocalCalls::displayInfo() const
     cout << "Date: " << month << " " << year << endl;
 }
 
-ostream& LocalCalls::operator<<(ostream& os, const LocalCalls& call)
+ostream& operator<<(ostream& os, const LocalCalls& call)
 {
     call.displayInfo();
     return os;
 }
-
-
-

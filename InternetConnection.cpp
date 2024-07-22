@@ -63,10 +63,8 @@ void InternetConnection::displayInfo() const {
     cout << "Date: " << month << "." << year << endl;
 }
 
-ostream& InternetConnection::operator<<(ostream& os, const InternetConnection& connection)
+ostream& operator<<(ostream& os, const InternetConnection& connection)
 {
     connection.displayInfo();
     return os;
 }
-
-

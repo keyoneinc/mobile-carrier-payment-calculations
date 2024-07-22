@@ -33,7 +33,7 @@ public:
 
     void displayInfo() const override;
 
-    ostream& operator<<(ostream& os, const LocalCalls& call);
+    friend ostream& operator<<(ostream& os, const LocalCalls& call);
 
 };
 
