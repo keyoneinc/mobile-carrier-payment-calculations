@@ -12,11 +12,12 @@ SubscriberFee::SubscriberFee(string lastName, string firstName, string middleNam
     this->address = address;
     this->city = city;
     this->passportData = passportData;
+    count++;
 
 }
 
 SubscriberFee::~SubscriberFee() {
-
+    count--;
 }
 
 void SubscriberFee::setLastName(string lastName) {
@@ -72,6 +73,17 @@ void SubscriberFee::displayInfo() const {
     cout << "Address: " << address << ", " << city << endl;
     cout << "Passport Data: " << passportData << endl;
 
+}
+
+int SubscriberFee::getCount()
+{
+    return count;
+}
+
+ostream& SubscriberFee::operator<<(ostream& os, const SubscriberFee& fee)
+{
+    fee.displayInfo();
+    return os;
 }
 
 

@@ -14,6 +14,7 @@ protected:
     string address;
     string city;
     string passportData;
+    static int count;
 public:
     SubscriberFee(string lastName, string firstName, string middleName, string address, string city, string passportData);
     virtual ~SubscriberFee();
@@ -33,5 +34,7 @@ public:
     string getPassportData() const;
 
     virtual void displayInfo() const;
+    static int getCount();
 
+    ostream& operator<<(ostream& os, const SubscriberFee& fee);
 };
