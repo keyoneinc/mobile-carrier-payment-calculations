@@ -39,5 +39,6 @@ public:
 
     void displayInfo() const override;
 
+    ostream& operator<<(ostream& os, const InternationalCalls& call);
 
 };

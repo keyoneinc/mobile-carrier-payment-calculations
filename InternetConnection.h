@@ -33,6 +33,7 @@ public:
 
     void displayInfo() const override;
 
+    ostream& operator<<(ostream& os, const InternetConnection& connection);
 
 };
 
