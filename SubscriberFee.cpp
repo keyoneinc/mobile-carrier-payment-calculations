@@ -4,6 +4,8 @@
 
 #include "SubscriberFee.h"
 
+int SubscriberFee::count = 0;
+
 SubscriberFee::SubscriberFee(string lastName, string firstName, string middleName, string address, string city,
                              string passportData) {
     this->lastName = lastName;
