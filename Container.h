@@ -13,7 +13,7 @@ private:
 public:
     void add(const shared_ptr<SubscriberFee>& fee);
     void remove(const shared_ptr<SubscriberFee>& fee);
-    void edit(const shared_ptr<SubscriberFee>& oldFee, shared_ptr<SubscriberFee>& newFee);
+    void edit(const shared_ptr<SubscriberFee>& oldFee, const shared_ptr<SubscriberFee>& newFee);
 
     void displayAll() const;
 

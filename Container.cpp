@@ -16,7 +16,7 @@ void Container::remove(const shared_ptr<SubscriberFee> &fee) {
     }
 }
 
-void Container::edit(const shared_ptr<SubscriberFee> &oldFee, shared_ptr<SubscriberFee> &newFee) {
+void Container::edit(const shared_ptr<SubscriberFee> &oldFee, const shared_ptr<SubscriberFee> &newFee) {
     auto it = find(fees.begin(), fees.end(), oldFee);
     if(it != fees.end()) {
         fees.erase(it);
